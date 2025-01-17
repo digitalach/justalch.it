@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Just $ALCH it!</title>
+        <style>
+            /* Global Styles */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Inter", sans-serif; /* Applying the Inter font */
+                background: linear-gradient(270deg, #ff6e01, #ff8e33, #ff6e01);
+                background-size: 600% 600%;
+                animation: gradient 16s ease infinite;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            ul {
+                list-style: none;
+                margin-bottom: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: white;
+                font-size: 0.875rem;
+                font-weight: bold;
+                border-radius: 9999px;
+                padding: 10px 20px;
+                transition: background-color 0.3s ease;
+            }
+
+            /* Button Styles */
+            .btn-orange {
+                background-color: #ff6e01;
+            }
+
+            .btn-orange:hover {
+                background-color: #e65c00;
+            }
+
+            .btn-green {
+                background-color: #28a745;
+            }
+
+            .btn-green:hover {
+                background-color: #218838;
+            }
+
+            .btn-blue {
+                background-color: #007bff;
+            }
+
+            .btn-blue:hover {
+                background-color: #0056b3;
+            }
+
+            img {
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Just $ALCH it!</h1>
+            <!-- Navigation Links -->
+            <ul>
+                <li>
+                    <a href="https://www.alchemistai.app/" class="btn-orange">
+                        Alchemist AI WebApp
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://docs.alchemistai.app/docs"
+                        class="btn-orange"
+                    >
+                        Documentation
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/alchemistAIapp" class="btn-orange">
+                        Official X
+                    </a>
+                </li>
+            </ul>
+            <!-- Market Links -->
+            <ul>
+                <li>
+                    <a
+                        href="https://www.coingecko.com/en/coins/alchemist-ai"
+                        class="btn-green"
+                    >
+                        <img src="assets/coingecko.svg" alt="CoinGecko Logo" />
+                        CoinGecko
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="https://coinmarketcap.com/currencies/alchemist-ai/"
+                        class="btn-blue"
+                    >
+                        <img
+                            src="assets/coinmarketcap.svg"
+                            alt="CoinMarketCap Logo"
+                        />
+                        CoinMarketCap
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
